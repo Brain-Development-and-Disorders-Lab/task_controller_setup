@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
@@ -7,6 +8,11 @@ module.exports = {
     index: "./src/index.tsx",
   },
   devtool: "inline-source-map",
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+    }),
+  ],
   module: {
     rules: [
       {

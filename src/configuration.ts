@@ -11,17 +11,15 @@ import { LogLevel } from "consola";
 // Configuration and other required data
 export const Configuration = {
   // General information
-  name: "Template task",
-  studyName: "template-task",
+  name: "Controller Setup",
+  studyName: "task_controller_setup",
 
   // Error screen configuration
   allowParticipantContact: false,
   contact: "henry.burgess@wustl.edu",
 
   // Manipulations that are configured in Gorilla
-  manipulations: {
-    variableA: 1,
-  },
+  manipulations: {},
 
   // Collection of any stimuli used in the trials
   stimuli: {},
@@ -30,11 +28,15 @@ export const Configuration = {
   resources: {},
 
   // Seed for RNG
-  seed: 0.1234,
+  seed: 0.1923,
 
   // Initial experiment state
   state: {
-    counter: 0,
+    inputOne: "",
+    inputTwo: "",
+    inputThree: "",
+    inputFour: "",
+    inputTrigger: "",
   },
 
   // Force fullscreen when deployed
